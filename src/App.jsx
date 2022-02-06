@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import Cabecalho from './components/Cabecalho'
 import Post from "./paginas/Post"
 import Categoria from './paginas/Categoria'
+import Clientes from "./paginas/Clientes"
 
 function App() {
   return (
@@ -28,6 +29,10 @@ function App() {
 
         <Route path="/posts/:id">
           <Post/>
+        </Route>
+
+        <Route path="/clientes">
+          <Clientes />
         </Route>
 
         <Route> {/* Vai passando pelos caminhos acima, nao vai achar, e vai vir pra ca, que definimos como padrao */}
